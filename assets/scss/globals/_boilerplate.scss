@@ -1,0 +1,6 @@
+@use "../util/colors" as color;
+
+body {
+  color: color.$white;
+  background: color.$very-mostly-blue;
+}
