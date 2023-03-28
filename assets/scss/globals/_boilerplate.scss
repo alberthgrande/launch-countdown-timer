@@ -1,6 +1,31 @@
 @use "../util/colors" as color;
-
+@use "../util/fonts" as font;
 body {
   color: color.$white;
-  background: color.$very-mostly-blue;
+  background: {
+    color: color.$very-mostly-blue;
+    image: url(../assets/images/pattern-hills.svg),
+      url(../assets/images/bg-stars.svg);
+    repeat: no-repeat;
+    position: left 0 bottom 0;
+  }
+  font: font.$font-size font.$font-family;
+  text-align: center;
+  text-transform: uppercase;
+
+  letter-spacing: 5px;
+
+  display: grid;
+  place-content: center;
+}
+
+h2 {
+  color: color.$soft-red;
+  font: {
+    size: 2rem;
+  }
+}
+
+h3 {
+  color: color.$grayish-blue;
 }
